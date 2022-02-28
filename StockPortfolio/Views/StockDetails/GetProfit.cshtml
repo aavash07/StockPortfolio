@@ -1,0 +1,43 @@
+﻿@model PortfolioManagementSystem.Models.StockProfitViewModel
+
+@{
+    ViewData["Title"] = "Total Profit Dashboard";
+}
+
+<h1>Total Profit Dashboard</h1>
+
+<div>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalUnits)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TotalUnits)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TotalInvestment)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TotalInvestment)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SoldAmount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SoldAmount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CurrentAmount)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CurrentAmount)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Profit)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Profit)
+        </dd>
+    </dl>
+</div>

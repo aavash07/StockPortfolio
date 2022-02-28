@@ -1,0 +1,60 @@
+﻿@model IEnumerable<PortfolioManagementSystem.Models.StockProfitSingleViewModel>
+@{
+    ViewData["Title"] = "GetProfitSingle";
+}
+
+<h1>Profit Single</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.StockName)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TotalUnits)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.TotalInvestment)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.SoldAmount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.CurrentAmount)
+                </th>
+                <th>
+                    @Html.DisplayNameFor(model => model.Profit)
+                </th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.StockName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalUnits)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalInvestment)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SoldAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CurrentAmount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Profit)
+                </td>
+            </tr>
+            }
+        </tbody>
+    </table>
+
+
